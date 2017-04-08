@@ -7,6 +7,10 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'about',
   styles: [`
+    .flexDemoContainer {
+        border: solid 1px red;
+        box-sizing: content-box !important;
+    }
   `],
   template: `
     <h1>About</h1>
@@ -20,6 +24,13 @@ import { ActivatedRoute } from '@angular/router';
       </h3>
     </div>
     <pre>this.localState = {{ localState | json }}</pre>
+    
+    <div class="flexDemoContainer">
+        <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex>
+            <div fxFlex> I'm above on mobile, and left on larger devices. </div>
+            <div fxFlex> I'm below on mobile, and right on larger devices. </div>
+        </div>
+    </div>
   `
 })
 export class AboutComponent implements OnInit {
