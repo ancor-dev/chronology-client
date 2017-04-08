@@ -1,7 +1,7 @@
 {
-  "name": "angular2-webpack-starter",
+  "name": "chronology-client",
   "version": "5.4.1",
-  "description": "An Angular 2 Webpack Starter kit featuring Angular 2 (Router, Http, Forms, Services, Tests, E2E, Coverage), Karma, Protractor, Jasmine, Istanbul, TypeScript, and Webpack by AngularClass",
+  "description": "Track and analyze your life time",
   "keywords": [
     "angular2",
     "webpack",
@@ -9,7 +9,7 @@
   ],
   "author": "Patrick Stapleton <patrick@angularclass.com>",
   "homepage": "https://github.com/angularclass/angular2-webpack-starter",
-  "license": "MIT",
+  "license": "LGPL-v2.1",
   "scripts": {
     "build:aot:prod": "npm run clean:dist && npm run clean:aot && webpack --config config/webpack.prod.js  --progress --profile --bail",
     "build:aot": "npm run build:aot:prod",
@@ -91,7 +91,11 @@
     "@angular/animations": "~4.0.1",
     "@angular/material": "^2.0.0-beta.3",
     "hammerjs": "~2.0.8",
-    "@angular/flex-layout": "~2.0.0-beta.7"
+    "@angular/flex-layout": "~2.0.0-beta.7",
+
+    "ng-win-doc": "~1.0.0-beta.1",
+    "ng-rest": "~1.0.0-beta.4.1",
+    "typed-object-interfaces": "~1.0.0"
   },
   "devDependencies": {
     "@angular/compiler-cli": "~4.0.1",
