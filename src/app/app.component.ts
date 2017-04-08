@@ -7,6 +7,7 @@ import {
   ViewEncapsulation
 } from '@angular/core';
 import { AppState } from './app.service';
+import { OverlayContainer } from '@angular/material';
 
 /*
  * App Component
@@ -16,9 +17,10 @@ import { AppState } from './app.service';
   selector: 'app',
   encapsulation: ViewEncapsulation.None,
   styleUrls: [
-    './app.component.css'
+    './app.component.scss'
   ],
   template: `
+    <button md-fab>Click me!</button>
     <nav>
       <a [routerLink]=" ['./'] "
         routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
@@ -64,8 +66,11 @@ export class AppComponent implements OnInit {
   public url = 'https://twitter.com/AngularClass';
 
   constructor(
-    public appState: AppState
-  ) {}
+    private appState: AppState,
+    overlayContainer: OverlayContainer,
+  ) {
+    overlayContainer.themeClass = 'indigo-pink';
+  }
 
   public ngOnInit() {
     console.log('Initial App State', this.appState.state);

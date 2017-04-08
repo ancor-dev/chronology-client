@@ -1,3 +1,4 @@
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
@@ -14,6 +15,10 @@ import {
   RouterModule,
   PreloadAllModules
 } from '@angular/router';
+
+// Material 2
+import { MaterialModule } from '@angular/material';
+import 'hammerjs';
 
 /*
  * Platform and Environment providers/directives/pipes
@@ -60,7 +65,9 @@ type StoreType = {
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules })
+    RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules }),
+    BrowserAnimationsModule,
+    MaterialModule,
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection
     ENV_PROVIDERS,
