@@ -1,0 +1,12 @@
+@import '~styles/shared';
+
+:host.big {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100%;
+
+  font-size: 2.5rem;
+  color: fade-out($brand-primary, 0.75);
+}
