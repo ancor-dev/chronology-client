@@ -35,6 +35,8 @@ import { AboutComponent } from './about';
 import { NoContentComponent } from './no-content';
 import { XLargeDirective } from './home/x-large';
 
+import { CoreModule } from './core';
+
 import '../styles/styles.scss';
 import '../styles/headings.css';
 
@@ -68,8 +70,11 @@ type StoreType = {
     HttpModule,
     RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules }),
     BrowserAnimationsModule,
+
     MaterialModule,
     FlexLayoutModule.forRoot(),
+
+    CoreModule,
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection
     ENV_PROVIDERS,

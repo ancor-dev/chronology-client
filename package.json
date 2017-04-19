@@ -94,7 +94,7 @@
     "@angular/flex-layout": "~2.0.0-beta.7",
 
     "ng-win-doc": "~1.0.0-beta.1",
-    "ng-rest": "~1.0.0-beta.4.1",
+    "ng-rest": "~1.0.0-beta.5.7",
     "typed-object-interfaces": "~1.0.0"
   },
   "devDependencies": {
