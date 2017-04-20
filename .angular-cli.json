@@ -1,0 +1,40 @@
+{
+  "project": {
+    "version": "1.0.0",
+    "name": "cli-chronology"
+  },
+  "apps": [
+    {
+      "root":"src",
+      "assets":"src/assets",
+      "main": "src/main.browser.ts",
+      "tsconfig": "tsconfig.json",
+      "mobile": false,
+      "styles": "src/styles/styles.scss",
+      "environments": {
+        "source": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts",
+        "dev": "environments/environment.dev.ts"
+      }
+    }
+  ],
+  "addons": [],
+  "packages": [],
+  "e2e": {
+    "protractor": {
+      "config": "protractor.conf.js"
+    }
+  },
+  "test": {
+    "karma": {
+      "config": "karma.conf.js"
+    }
+  },
+  "defaults": {
+    "prefix": "app",
+    "sourceDir": "src",
+    "styleExt": "scss",
+    "prefixInterfaces": false,
+    "lazyRoutePrefix": "+"
+  }
+}

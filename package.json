@@ -99,6 +99,7 @@
   },
   "devDependencies": {
     "@angular/compiler-cli": "~4.0.1",
+    "@angular/cli": "~1.0.0",
     "@types/hammerjs": "^2.0.33",
     "@types/jasmine": "^2.2.34",
     "@types/node": "^7.0.0",

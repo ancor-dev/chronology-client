@@ -62,7 +62,7 @@ type StoreType = {
     AboutComponent,
     HomeComponent,
     NoContentComponent,
-    XLargeDirective
+    XLargeDirective,
   ],
   imports: [ // import Angular's modules
     BrowserModule,
