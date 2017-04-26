@@ -37,6 +37,8 @@ import { XLargeDirective } from './home/x-large';
 
 import { CoreModule } from './core';
 
+import './rxjs';
+
 import '../styles/styles.scss';
 import '../styles/headings.css';
 
