@@ -12,5 +12,6 @@ export const ROUTES: Routes = [
   { path: 'detail', loadChildren: './+detail#DetailModule'},
   { path: 'barrel', loadChildren: './+barrel#BarrelModule'},
   { path: 'auth', loadChildren: './modules/+auth#AuthModule' },
+  { path: 'cabinet', loadChildren: './modules/+cabinet#CabinetModule' },
   { path: '**',    component: NoContentComponent },
 ];
