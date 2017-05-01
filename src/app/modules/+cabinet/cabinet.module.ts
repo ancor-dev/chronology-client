@@ -4,14 +4,21 @@ import { RouterModule } from '@angular/router';
 import { SharedModule } from 'src/app/shared';
 
 import { ROUTES } from './cabinet.routes';
+import { CabinetComponent } from './cabinet.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
+  declarations: [
+    CabinetComponent,
+    HeaderComponent,
+    FooterComponent,
+  ],
   imports:      [
     SharedModule,
     RouterModule.forChild(ROUTES),
   ],
   exports:      [],
-  declarations: [],
   providers:    [],
 })
 export class CabinetModule {
