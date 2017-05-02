@@ -1,9 +1,10 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
+
 import { Validation } from 'app/helpers/validation';
 
 @Component({
-  selector: 'ifs-control-messages',
+  selector: 'app-control-messages',
   template: `
     <div class="help-block validation-error" *ngIf="errorMessage !== null">
         {{ errorMessage | translate: firstError }}

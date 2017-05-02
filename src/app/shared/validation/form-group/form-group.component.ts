@@ -18,8 +18,17 @@ import { StringObject } from 'typed-object-interfaces';
 import { CustomMessagesService } from '../custom-messages.service';
 
 @Component({
-  selector: 'ifs-form-group',
-  template: require('./form-group.component.pug'),
+  selector: 'app-form-group',
+  template: `
+    <ng-content></ng-content>
+    <span class="form-control-feedback" *ngIf="hasFeedback && isDirty" aria-hidden="true"></span>
+    <i class="glyphicon" [ngClass]="iconClass"></i>
+
+    <app-control-messages *ngIf="isDirty"
+                          [control]="control"
+                          [messages]="messages"
+    ></app-control-messages>
+  `,
   styles:   [ require('./form-group.component.scss') ],
 })
 export class FormGroupComponent implements OnInit, OnDestroy {

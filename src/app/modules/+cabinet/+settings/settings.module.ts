@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { SharedModule } from 'src/app/shared';
+import { SharedModule } from 'app/shared';
 
 import { SettingsComponent } from './settings.component';
 

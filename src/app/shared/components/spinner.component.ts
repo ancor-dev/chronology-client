@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, HostBinding } from '@angular/core';
 
 @Component({
-  selector: 'ifs-spinner',
+  selector: 'app-spinner',
   template: `
     <ng-content></ng-content>
 
