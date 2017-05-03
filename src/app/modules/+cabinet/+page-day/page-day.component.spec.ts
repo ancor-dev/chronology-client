@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DayComponent } from './day.component';
+import { PageDayComponent } from './page-day.component';
 
-describe('DayComponent', () => {
-  let component: DayComponent;
-  let fixture: ComponentFixture<DayComponent>;
+describe('PageDayComponent', () => {
+  let component: PageDayComponent;
+  let fixture: ComponentFixture<PageDayComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DayComponent ]
+      declarations: [ PageDayComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DayComponent);
+    fixture = TestBed.createComponent(PageDayComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

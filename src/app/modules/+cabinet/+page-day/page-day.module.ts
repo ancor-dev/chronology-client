@@ -1,25 +1,20 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { DayComponent } from './day.component';
+import { PageDayComponent } from './page-day.component';
 import { SharedModule } from 'app/shared';
 
 @NgModule({
   declarations: [
-    DayComponent,
+    PageDayComponent,
   ],
 
   imports: [
     SharedModule,
-    RouterModule.forChild([
-      {
-        path:      '',
-        component: DayComponent,
-      },
-    ]),
+    RouterModule.forChild([ { path: '', component: PageDayComponent } ]),
   ],
 
   providers: [],
 })
-export class DayModule {
+export class PageDayModule {
 }
