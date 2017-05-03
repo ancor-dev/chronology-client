@@ -6,7 +6,9 @@ import { SharedModule } from 'app/shared';
 import { PageSettingsComponent } from './page-settings.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    PageSettingsComponent,
+  ],
   imports:      [
     SharedModule,
     RouterModule.forChild([ { path: '', component: PageSettingsComponent } ]),

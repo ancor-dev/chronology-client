@@ -179,7 +179,7 @@ module.exports = function (options) {
           exclude: [helpers.root('src/index.html')]
         },
 
-        /* 
+        /*
          * File loader for supporting images, for example, in CSS files.
          */
         {
@@ -189,7 +189,7 @@ module.exports = function (options) {
 
         /* File loader for supporting fonts, for example, in CSS files.
         */
-        { 
+        {
           test: /\.(eot|woff2?|svg|ttf)([\?]?.*)$/,
           use: 'file-loader'
         }
@@ -266,6 +266,7 @@ module.exports = function (options) {
        */
       new CopyWebpackPlugin([
         { from: 'src/assets', to: 'assets' },
+        { from: 'src/i18n', to: 'i18n' },
         { from: 'src/meta'}
       ]),
 

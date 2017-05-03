@@ -7,7 +7,9 @@ import {
   ViewEncapsulation
 } from '@angular/core';
 import { AppState } from './app.service';
+
 import { OverlayContainer } from '@angular/material';
+import { TranslateService } from '@ngx-translate/core';
 
 /*
  * App Component
@@ -42,6 +44,14 @@ import { OverlayContainer } from '@angular/material';
         routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
         About
       </a>
+      <a [routerLink]=" ['./cabinet/settings'] "
+         routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
+          Settings
+      </a>
+        <a [routerLink]=" ['./cabinet/day/17-11-1994'] "
+           routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
+            Day
+        </a>
     </nav>
 
     <main>
@@ -67,9 +77,17 @@ export class AppComponent implements OnInit {
 
   constructor(
     private appState: AppState,
+    translate: TranslateService,
     overlayContainer: OverlayContainer,
   ) {
     overlayContainer.themeClass = 'indigo-pink';
+
+    // this language will be used as a fallback when a translation isn't found in the current
+    // language
+    translate.setDefaultLang('en');
+
+    // the lang to use, if the lang isn't available, it will use the current loader to get them
+    translate.use('en');
   }
 
   public ngOnInit() {

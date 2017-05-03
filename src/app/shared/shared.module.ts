@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 // Components / Directives/ Pipes
 
@@ -21,10 +22,12 @@ import { PIPES } from './pipes';
   imports: [
     CommonModule,
     FormsModule,
+    TranslateModule,
   ],
   exports: [
     CommonModule,
     FormsModule,
+    TranslateModule,
 
     ...VALIDATION_DECLARATIONS,
     ...DIRECTIVES,

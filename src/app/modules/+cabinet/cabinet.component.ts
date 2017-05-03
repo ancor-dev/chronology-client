@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  templateUrl: `
+  template: `
     <app-header></app-header>
     <hr>
     <router-outlet></router-outlet>

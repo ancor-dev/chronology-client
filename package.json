@@ -96,7 +96,10 @@
     "ng-win-doc": "~1.0.0-beta.1",
     "ng-rest": "1.0.0-beta.6.3",
     "typed-object-interfaces": "~1.0.0",
-    "class-validator": "~0.7.0"
+    "class-validator": "~0.7.0",
+
+    "@ngx-translate/core": "~6.0.1",
+    "@ngx-translate/http-loader" : "~0.0.3"
   },
   "devDependencies": {
     "@angular/compiler-cli": "~4.0.1",
