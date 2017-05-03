@@ -8,6 +8,10 @@ export const ROUTES: Routes = [
         path: 'settings',
         loadChildren: './+settings#PageSettingsModule'
       },
+      {
+        path: 'day',
+        loadChildren: './+day#PageDayModule'
+      },
     ],
   },
 ];
