@@ -3,14 +3,14 @@ import { RouterModule } from '@angular/router';
 
 import { SharedModule } from 'app/shared';
 
-import { SettingsComponent } from './settings.component';
+import { PageSettingsComponent } from './page-settings.component';
 
 @NgModule({
   declarations: [],
   imports:      [
     SharedModule,
-    RouterModule.forChild([ { path: '', component: SettingsComponent } ]),
+    RouterModule.forChild([ { path: '', component: PageSettingsComponent } ]),
   ],
 })
-export class SettingsModule {
+export class PageSettingsModule {
 }

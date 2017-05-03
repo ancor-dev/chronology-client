@@ -6,7 +6,7 @@ export const ROUTES: Routes = [
     children: [
       {
         path: 'settings',
-        loadChildren: './+settings#PageSettingsModule'
+        loadChildren: './+page-settings#PageSettingsModule'
       },
       {
         path: 'day',
