@@ -42,12 +42,17 @@ export class FormGroupComponent implements OnInit, OnDestroy {
   public hasFeedback: boolean = true;
 
   @HostBinding('class.has-error')
-  public get hasError() { return this.statusClass.hasError; };
+  public get hasError() { return this.statusClass.hasError; }
 
   @HostBinding('class.has-success')
-  public get hasSuccess() { return this.statusClass.hasSuccess; };
+  public get hasSuccess() { return this.statusClass.hasSuccess; }
 
   public messages: StringObject;
+
+  /**
+   * The form control
+   */
+  public control: FormControl;
 
   @Input()
   private controlName: string;
@@ -72,11 +77,6 @@ export class FormGroupComponent implements OnInit, OnDestroy {
    * Emits new value after every input value changing.
    */
   private errors$: Observable<{[name: string]: any}>;
-
-  /**
-   * The form control
-   */
-  private control: FormControl;
 
   /**
    * Subscriptions container for do 'unsubscribe'.
@@ -150,13 +150,13 @@ export class FormGroupComponent implements OnInit, OnDestroy {
   } // end initStreams()
 
   private retrieveFormControl(): void {
-    let formGroup: FormGroup = <FormGroup> this.parent.control;
+    const formGroup: FormGroup = this.parent.control as FormGroup;
 
     if (formGroup instanceof FormGroup === false) {
       throw new Error('Parent ControlContainer is not FormGroup instance');
     }
 
-    this.control = <FormControl> formGroup.controls[this.controlName];
+    this.control = formGroup.controls[this.controlName] as FormControl;
     if (!this.control) {
       throw new Error(`Can not find ${this.controlName} in parent FormControl`);
     }
@@ -170,7 +170,7 @@ export class FormGroupComponent implements OnInit, OnDestroy {
   } // end addCustomError()
 
   private clearCustomError(): void {
-    let errors = this.control.errors;
+    const errors = this.control.errors;
 
     if (errors && errors['custom']) {
       delete errors['custom'];

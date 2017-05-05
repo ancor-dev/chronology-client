@@ -34,7 +34,7 @@ export function HttpLoaderFactory(http: Http) {
 })
 export class CoreModule {
 
-  public constructor (@Optional() @SkipSelf() parentModule: CoreModule) {
+  public constructor(@Optional() @SkipSelf() parentModule: CoreModule) {
     if (parentModule) {
       throw new Error(
         'CoreModule is already loaded. Import it in the AppModule only');

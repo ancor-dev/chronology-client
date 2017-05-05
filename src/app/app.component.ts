@@ -76,7 +76,7 @@ export class AppComponent implements OnInit {
   public url = 'https://twitter.com/AngularClass';
 
   constructor(
-    private appState: AppState,
+    public appState: AppState,
     translate: TranslateService,
     overlayContainer: OverlayContainer,
   ) {

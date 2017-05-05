@@ -9,7 +9,7 @@ import { Component, OnInit, Input, HostBinding } from '@angular/core';
        *ngIf="!big"
        [style.display]="show ? 'block' : 'none' "
     ></i>
-    
+
     <i class="fa fa-w fa-spin fa-5x fa-spinner"
        *ngIf="big"
        [style.display]="show ? 'block' : 'none' "

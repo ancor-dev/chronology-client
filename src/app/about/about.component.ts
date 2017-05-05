@@ -24,7 +24,7 @@ import { ActivatedRoute } from '@angular/router';
       </h3>
     </div>
     <pre>this.localState = {{ localState | json }}</pre>
-    
+
     <div class="flexDemoContainer">
         <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex>
             <div fxFlex> I'm above on mobile, and left on larger devices. </div>
