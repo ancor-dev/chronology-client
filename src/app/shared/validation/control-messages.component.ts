@@ -15,7 +15,7 @@ export class ControlMessagesComponent implements OnInit {
   @Input() public control: FormControl;
   @Input() public messages: {[key: string]: string};
 
-  constructor() {
+  public constructor() {
   }
 
   public ngOnInit(): void {
