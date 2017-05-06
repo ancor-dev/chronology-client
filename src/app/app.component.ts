@@ -48,10 +48,14 @@ import { TranslateService } from '@ngx-translate/core';
          routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
           Settings
       </a>
-        <a [routerLink]=" ['./cabinet/day/17-11-1994'] "
+        <a [routerLink]=" ['./cabinet/report'] "
            routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
-            Day
+            Report
         </a>
+      <a [routerLink]=" ['./cabinet/day/17-11-1994'] "
+         routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
+          Day
+      </a>
     </nav>
 
     <main>

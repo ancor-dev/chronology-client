@@ -11,6 +11,10 @@ export const ROUTES: Routes = [
         loadChildren: './+page-settings#PageSettingsModule'
       },
       {
+        path: 'report',
+        loadChildren: './+page-report#PageReportModule'
+      },
+      {
         path: 'day/:date',
         loadChildren: './+page-day#PageDayModule'
       },
