@@ -44,6 +44,10 @@ import { TranslateService } from '@ngx-translate/core';
         routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
         About
       </a>
+        <a [routerLink]=" ['/auth/login'] "
+           routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
+            Auth / Login
+        </a>
       <a [routerLink]=" ['./cabinet/settings'] "
          routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
           Settings

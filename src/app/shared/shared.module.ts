@@ -1,7 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
+
 import { TranslateModule } from '@ngx-translate/core';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 // Components / Directives/ Pipes
 
@@ -23,11 +25,13 @@ import { PIPES } from './pipes';
     CommonModule,
     FormsModule,
     TranslateModule,
+    FlexLayoutModule,
   ],
   exports: [
     CommonModule,
     FormsModule,
     TranslateModule,
+    FlexLayoutModule,
 
     ...VALIDATION_DECLARATIONS,
     ...DIRECTIVES,

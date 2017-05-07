@@ -1,0 +1,12 @@
+.flexDemoContainer {
+  border: solid 1px red;
+  box-sizing: content-box !important;
+  height: 200px;
+
+  div {
+
+    & > div:nth-child(1) { background-color: #afa; }
+    & > div:nth-child(2) { background-color: #aff; }
+    & > div:nth-child(3) { background-color: #ffa; }
+  }
+}

@@ -1,3 +1,13 @@
 <p>
-  login works!
+    login works!
 </p>
+
+<div class="flexDemoContainer">
+    <h1 fxFlexFill>
+        <div fxLayoutGap="10px" fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxLayoutAlign.lg="space-between end" fxFlexFill>
+            <div fxFlex fxFlex.md="15%"> 11 I'm above on mobile, and left on larger devices. 11 </div>
+            <div fxFlex > 22 I'm below on mobile, and right on larger devices. 22 </div>
+            <div fxFlex fxFlexAlign="stretch" fxHide.xs> 33 I'm below on mobile, and right on larger devices. 33 </div>
+        </div>
+    </h1>
+</div>
